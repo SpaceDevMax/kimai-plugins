@@ -20,7 +20,7 @@ ADMIN_USER="admin"
 ADMIN_EMAIL="admin@example.com"
 ADMIN_ROLE="ROLE_SUPER_ADMIN"
 
-echo "=== Custom Kimai Einrichtung ==="
+echo "=== Einrichten der Kimai Testumgebung ==="
 
 # 1. Prüfe, ob Docker läuft
 if ! docker info >/dev/null 2>&1; then
