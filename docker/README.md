@@ -11,8 +11,8 @@ Diese Anleitung beschreibt, wie du [Kimai](https://github.com/kimai/kimai) mit D
 Für die einfachste Einrichtung nutze das mitgelieferte Bash-Skript `setup-kimai.sh`:
 
 ```bash
-git clone https://github.com/dein-benutzername/custom-kimai.git
-cd custom-kimai
+git clone https://github.com/SpaceDevMax/kimai-plugins.git
+cd kimai-plugins
 chmod +x setup-kimai.sh
 ./setup-kimai.sh
 ```
