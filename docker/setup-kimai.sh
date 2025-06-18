@@ -4,7 +4,7 @@
 # Automatisiert die Einrichtung von Custom Kimai mit Docker (MySQL + Kimai)
 # Erstellt Netzwerk, startet Container und fügt einen Admin-Benutzer hinzu
 
-set -e # Beende Skript bei Fehlern
+# set -e # Beende Skript bei Fehlern
 
 # Farben für Ausgabe
 RED='\033[0;31m'
@@ -105,9 +105,9 @@ if [ -z "$ADMIN_PASSWORD" ]; then
 fi
 
 # Führe Benutzererstellung aus
-docker exec "$KIMAI_CONTAINER" \
+echo "$ADMIN_PASSWORD" | docker exec -i "$KIMAI_CONTAINER" \
     /opt/kimai/bin/console \
-    kimai:user:create "$ADMIN_USER" "$ADMIN_EMAIL" "$ADMIN_ROLE" <<< "$ADMIN_PASSWORD"
+    kimai:user:create "$ADMIN_USER" "$ADMIN_EMAIL" "$ADMIN_ROLE"
 
 # Überprüfe, ob Benutzer erstellt wurde
 if docker exec "$KIMAI_CONTAINER" /opt/kimai/bin/console kimai:user:list | grep -q "$ADMIN_USER"; then
