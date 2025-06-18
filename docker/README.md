@@ -113,6 +113,15 @@ docker exec -ti kimai-test \
   docker stop kimai-mysql-testing kimai-test
   ```
 
+### 6. Containermanagement
+- **Containerzugriff**:
+  ```bash
+  docker exec -it kimai-test bash
+  ```
+- **Zu Kimai-Directoy navigieren**:
+  ```bash
+  cd /opt/kimai
+  ```
 
 
 ## Hinweise
