@@ -12,7 +12,7 @@ Für die einfachste Einrichtung nutze das mitgelieferte Bash-Skript `setup-kimai
 
 ```bash
 git clone https://github.com/SpaceDevMax/kimai-plugins.git
-cd kimai-plugins
+cd kimai-plugins/docker
 chmod +x setup-kimai.sh
 ./setup-kimai.sh
 ```
