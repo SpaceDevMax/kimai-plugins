@@ -71,7 +71,9 @@ for i in {1..30}; do
     sleep 1
 done
 
-# 5. Starte Kimai-Container
+# 5. Starte Kimai-Container (Build with no cache to apply any file changes)
+echo "Baue Kimai-Image mit --no-cache..."
+docker build --no-cache -t kimai/kimai2:apache .
 echo "Starte Kimai-Container '$KIMAI_CONTAINER'..."
 docker run --rm --name "$KIMAI_CONTAINER" \
     -d \
