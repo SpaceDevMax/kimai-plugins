@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # setup-kimai.sh
-# Automatisiert die Einrichtung von Custom Kimai mit Docker (MySQL + Kimai)
+# Automatisiert die Einrichtung von Kimai mit Docker (MySQL + Kimai)
 # Erstellt Netzwerk, startet Container und fügt einen Admin-Benutzer hinzu
 
 # set -e # Beende Skript bei Fehlern
