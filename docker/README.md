@@ -14,7 +14,7 @@ Für die einfachste Einrichtung nutze das mitgelieferte Bash-Skript `setup-kimai
 git clone https://github.com/SpaceDevMax/kimai-plugins.git
 cd kimai-plugins/docker
 chmod +x setup-kimai.sh
-./setup-kimai.sh
+sudo ./setup-kimai.sh
 ```
 
 Das Skript erstellt das Netzwerk, startet MySQL und Kimai, und führt dich durch die Erstellung eines Admin-Benutzers. Folge den Anweisungen im Terminal.
